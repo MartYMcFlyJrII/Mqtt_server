@@ -2,7 +2,6 @@
 
 The purpose of this project is to receive the values from 4 sensors and send messages to different social networks warning the user that the limit has been exceeded, using Node-red with docker.
 
-
 # IMPORTANT
 
 If you have changes in the Node-red that you want to commit, pls use this command first:
@@ -13,7 +12,67 @@ $ docker cp  Node-red:/data  ./node_red
 
 # **Commands Docker:**
 
-### Docker
+## Docker-compose: (TEAMMATES THIS IS EASIER)
+
+##### ***(For the first time or you use git pull)***
+
+```
+$ docker-compose up --build 
+```
+
+##### (NOT the first time)
+
+1- To turn on the server
+
+```
+$ docker-compose up
+```
+
+2- To turn it down without deleting the data
+
+```
+docker-compose down
+```
+
+3- Extras commands
+
+If you want to use the terminal of a specific container (virtual machine). After you use the docker-compose up command you can use:
+
+```
+docker-compose exec nodered sh
+```
+
+If you want to use the same terminal use -d at the end
+
+```
+$ docker-compose up -d
+```
+
+*All commands:*
+
+```
+$ docker-compose -h 
+
+Commands:
+  build       Build or rebuild services
+  convert     Converts the compose file to platform's canonical format
+  cp          Copy files/folders between a service container and the local filesystem
+  create      Creates containers for a service.
+  down        Stop and remove containers, networks
+  events      Receive real time events from containers.
+  exec        Execute a command in a running container.
+  rm          Removes stopped service containers
+  run         Run a one-off command on a service.
+  start       Start services
+  stop        Stop services
+  top         Display the running processes
+  unpause     Unpause services
+  up          Create and start containers
+  version     Show the Docker Compose version information
+```
+
+
+## Docker
 
 1- **Simplest form to run node-red is:**
 
@@ -79,65 +138,3 @@ $ docker volume prune (and select "yes")
 ```
 
 This command is going to remove all unused volumes, be careful.
-
-
-
-### Docker-compose: (teammates this is easier)
-
-##### ***(For first time or if your delete the data saved)***
-
-```
-$ docker-compose up --build 
-```
-
-##### (NOT the first time)
-
-1- To turn on the server
-
-```
-$ docker-compose up
-```
-
-2- To turn it down without deleting the data
-
-```
-docker-compose down
-```
-
-
-3- Extras commands
-
-If you want to use the terminal of a specific container (virtual machine). After you use the docker-compose up command you can use:
-
-```
-docker-compose exec sh
-```
-
-If you want to use the same terminal use -d at the end
-
-```
-$ docker-compose up -d
-```
-
-*All commands:*
-
-```
-$ docker-compose -h 
-
-Commands:
-  build       Build or rebuild services
-  convert     Converts the compose file to platform's canonical format
-  cp          Copy files/folders between a service container and the local filesystem
-  create      Creates containers for a service.
-  down        Stop and remove containers, networks
-  events      Receive real time events from containers.
-  exec        Execute a command in a running container.
-  rm          Removes stopped service containers
-  run         Run a one-off command on a service.
-  start       Start services
-  stop        Stop services
-  top         Display the running processes
-  unpause     Unpause services
-  up          Create and start containers
-  version     Show the Docker Compose version information
-```
