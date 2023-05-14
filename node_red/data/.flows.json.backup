@@ -1,96 +1,52 @@
 [
     {
-        "id": "f6f2187d.f17ca8",
+        "id": "8df74e9bb1d5780b",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
-        "info": ""
+        "info": "",
+        "env": []
     },
     {
-        "id": "3cc11d24.ff01a2",
-        "type": "comment",
-        "z": "f6f2187d.f17ca8",
-        "name": "WARNING: please check you have started this container with a volume that is mounted to /data\\n otherwise any flow changes are lost when you redeploy or upgrade the container\\n (e.g. upgrade to a more recent node-red docker image).\\n  If you are using named volumes you can ignore this warning.\\n Double click or see info side panel to learn how to start Node-RED in Docker to save your work",
-        "info": "\nTo start docker with a bind mount volume (-v option), for example:\n\n```\ndocker run -it -p 1880:1880 -v /home/user/node_red_data:/data --name mynodered nodered/node-red\n```\n\nwhere `/home/user/node_red_data` is a directory on your host machine where you want to store your flows.\n\nIf you do not do this then you can experiment and redploy flows, but if you restart or upgrade the container the flows will be disconnected and lost. \n\nThey will still exist in a hidden data volume, which can be recovered using standard docker techniques, but that is much more complex than just starting with a named volume as described above.",
-        "x": 350,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "d45b8b3058c80a42",
-        "type": "comment",
-        "z": "f6f2187d.f17ca8",
+        "id": "4c22327b9c1b0be7",
+        "type": "status",
+        "z": "8df74e9bb1d5780b",
         "name": "",
-        "info": "asdfasdfasdf",
+        "scope": null,
         "x": 500,
-        "y": 600,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "02f5e95223e74b1d",
+        "type": "comment",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "info": "",
+        "x": 1020,
+        "y": 560,
         "wires": []
     },
     {
-        "id": "b2030332894cb3b7",
-        "type": "range",
-        "z": "f6f2187d.f17ca8",
-        "minin": "",
-        "maxin": "",
-        "minout": "",
-        "maxout": "",
-        "action": "scale",
-        "round": false,
-        "property": "payload",
+        "id": "37ea20ea19944790",
+        "type": "comment",
+        "z": "8df74e9bb1d5780b",
         "name": "",
-        "x": 390,
-        "y": 360,
-        "wires": [
-            [
-                "9acc89a86cf6191c",
-                "8ad5aad47708d27b"
-            ]
-        ]
+        "info": "",
+        "x": 1140,
+        "y": 260,
+        "wires": []
     },
     {
-        "id": "9acc89a86cf6191c",
-        "type": "delay",
-        "z": "f6f2187d.f17ca8",
+        "id": "649f88fbb6e6e2b5",
+        "type": "comment",
+        "z": "8df74e9bb1d5780b",
         "name": "",
-        "pauseType": "delay",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 640,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8ad5aad47708d27b",
-        "type": "trigger",
-        "z": "f6f2187d.f17ca8",
-        "name": "",
-        "op1": "1",
-        "op2": "0",
-        "op1type": "val",
-        "op2type": "val",
-        "duration": "250",
-        "extend": "false",
-        "overrideDelay": "false",
-        "units": "ms",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 920,
-        "y": 580,
-        "wires": [
-            []
-        ]
+        "info": "",
+        "x": 840,
+        "y": 420,
+        "wires": []
     }
 ]

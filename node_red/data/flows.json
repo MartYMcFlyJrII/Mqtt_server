@@ -38,5 +38,25 @@
         "x": 1140,
         "y": 260,
         "wires": []
+    },
+    {
+        "id": "649f88fbb6e6e2b5",
+        "type": "comment",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "info": "",
+        "x": 840,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5f75e47268866b1b",
+        "type": "comment",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "info": "",
+        "x": 680,
+        "y": 480,
+        "wires": []
     }
 ]
