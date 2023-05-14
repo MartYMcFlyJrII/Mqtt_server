@@ -42,7 +42,8 @@
         "y": 360,
         "wires": [
             [
-                "9acc89a86cf6191c"
+                "9acc89a86cf6191c",
+                "8ad5aad47708d27b"
             ]
         ]
     },
@@ -65,6 +66,29 @@
         "outputs": 1,
         "x": 640,
         "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ad5aad47708d27b",
+        "type": "trigger",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "val",
+        "op2type": "val",
+        "duration": "250",
+        "extend": "false",
+        "overrideDelay": "false",
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 920,
+        "y": 580,
         "wires": [
             []
         ]
