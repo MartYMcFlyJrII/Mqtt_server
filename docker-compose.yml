@@ -3,12 +3,34 @@ services:
   nodered:
     container_name: Node-red
     image: nodered/node-red:latest
+    environment:
+      - SERVICE_NAME=node-red
     ports:
       - "1880:1880"
     volumes:
       - ./node_red/data:/data
+    links: 
+      - mosquitto
     networks:
-      - node_red_net
-
+      - mynet
+  mosquitto:
+        image: eclipse-mosquitto
+        hostname: mosquitto
+        container_name: mosquitto
+        expose:
+          - "1883"
+          - "9001"
+        ports:
+            - 1883:1883
+            - 9001:9001
+        volumes:
+            - ./mosquitto/config:/mosquitto/config         
+        networks:
+          - mynet
+          
 networks:
-  node_red_net:
+  mynet:
+    driver: bridge
+    driver_opts:
+          com.docker.network.enable_ipv6: "true"
+

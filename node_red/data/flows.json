@@ -8,55 +8,68 @@
         "env": []
     },
     {
-        "id": "4c22327b9c1b0be7",
-        "type": "status",
-        "z": "8df74e9bb1d5780b",
-        "name": "",
-        "scope": null,
-        "x": 500,
-        "y": 120,
-        "wires": [
-            []
-        ]
+        "id": "fabe93bc2e8df2ba",
+        "type": "mqtt-broker",
+        "name": "sup",
+        "broker": "mosquitto",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
     },
     {
-        "id": "02f5e95223e74b1d",
-        "type": "comment",
+        "id": "4f28b49cbd74f6d6",
+        "type": "debug",
         "z": "8df74e9bb1d5780b",
-        "name": "",
-        "info": "",
-        "x": 1020,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "37ea20ea19944790",
-        "type": "comment",
-        "z": "8df74e9bb1d5780b",
-        "name": "",
-        "info": "",
-        "x": 1140,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "649f88fbb6e6e2b5",
-        "type": "comment",
-        "z": "8df74e9bb1d5780b",
-        "name": "",
-        "info": "",
-        "x": 840,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "5f75e47268866b1b",
-        "type": "comment",
-        "z": "8df74e9bb1d5780b",
-        "name": "",
-        "info": "",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
         "x": 680,
-        "y": 480,
+        "y": 280,
         "wires": []
+    },
+    {
+        "id": "5fac186d01deb879",
+        "type": "mqtt in",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "topic": "Prueba1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "fabe93bc2e8df2ba",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "4f28b49cbd74f6d6"
+            ]
+        ]
     }
 ]
