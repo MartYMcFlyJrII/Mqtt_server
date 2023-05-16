@@ -2,14 +2,6 @@
 
 The purpose of this project is to receive the values from 4 sensors and send messages to different social networks warning the user that the limit has been exceeded, using Node-red with docker.
 
-# IMPORTANT
-
-If you have changes in the Node-red that you want to commit, pls use this command first:
-
-```
-$ docker cp  Node-red:/data  ./node_red
-```
-
 # **Commands Docker:**
 
 ## Docker-compose: (TEAMMATES THIS IS EASIER)
@@ -71,8 +63,7 @@ Commands:
   version     Show the Docker Compose version information
 ```
 
-
-## Docker
+## Docker node-red
 
 1- **Simplest form to run node-red is:**
 
