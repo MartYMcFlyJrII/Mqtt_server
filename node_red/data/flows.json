@@ -71,5 +71,15 @@
                 "4f28b49cbd74f6d6"
             ]
         ]
+    },
+    {
+        "id": "48ad3412a0d62412",
+        "type": "comment",
+        "z": "8df74e9bb1d5780b",
+        "name": "aslkdjgaslkdgj prueba 1",
+        "info": "",
+        "x": 1160,
+        "y": 160,
+        "wires": []
     }
 ]
