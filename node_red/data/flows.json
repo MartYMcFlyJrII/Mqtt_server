@@ -35,21 +35,119 @@
         "sessionExpiry": ""
     },
     {
-        "id": "4f28b49cbd74f6d6",
-        "type": "debug",
-        "z": "8df74e9bb1d5780b",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 680,
-        "y": 280,
-        "wires": []
+        "id": "3358530e05362838",
+        "type": "ui_group",
+        "name": "Datos de purificadora",
+        "tab": "d6ae4db263df279d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d6ae4db263df279d",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7a4198c74bcc169d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
     },
     {
         "id": "5fac186d01deb879",
@@ -64,11 +162,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 320,
-        "y": 280,
+        "x": 280,
+        "y": 240,
         "wires": [
             [
-                "4f28b49cbd74f6d6"
+                "420a5fbfe251e4ec"
             ]
         ]
     },
@@ -79,7 +177,224 @@
         "name": "aslkdjgaslkdgj prueba 1",
         "info": "",
         "x": 1160,
-        "y": 160,
+        "y": 420,
         "wires": []
+    },
+    {
+        "id": "bfe82911893c8b60",
+        "type": "ui_chart",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "group": "3358530e05362838",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Agua purificada",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2500",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1140,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "420a5fbfe251e4ec",
+        "type": "switch",
+        "z": "8df74e9bb1d5780b",
+        "name": "separar",
+        "property": "payload.Sensor",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "pm",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "cloro",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "nvl_agua_purificada",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "nvl_agua_cruda",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 580,
+        "y": 220,
+        "wires": [
+            [
+                "7eb79bb0c9b37637"
+            ],
+            [
+                "ad19685473b70531"
+            ],
+            [
+                "571b9443e3b6dd43"
+            ],
+            [
+                "73c1cf226bd22bb4"
+            ]
+        ]
+    },
+    {
+        "id": "571b9443e3b6dd43",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "F agua purificada",
+        "func": "msg.payload = msg.payload.Valor\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 300,
+        "wires": [
+            [
+                "bfe82911893c8b60"
+            ]
+        ]
+    },
+    {
+        "id": "73c1cf226bd22bb4",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "agua cruda",
+        "func": "msg.payload = msg.payload.Valor\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad19685473b70531",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "cloro",
+        "func": "msg.payload = msg.payload.Valor\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7eb79bb0c9b37637",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "pm",
+        "func": "\nmsg.payload = msg.payload.Valor\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 120,
+        "wires": [
+            [
+                "1831a3bc07d58202",
+                "35ab891263c3cfe6"
+            ]
+        ]
+    },
+    {
+        "id": "1831a3bc07d58202",
+        "type": "ui_gauge",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "group": "3358530e05362838",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1150,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "35ab891263c3cfe6",
+        "type": "switch",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1070,
+        "y": 220,
+        "wires": [
+            []
+        ]
     }
 ]
