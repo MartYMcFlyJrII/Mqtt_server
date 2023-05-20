@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "d9779f0ce19d4b83",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "fabe93bc2e8df2ba",
         "type": "mqtt-broker",
         "name": "sup",
@@ -150,6 +158,31 @@
         }
     },
     {
+        "id": "4447d87b9554097f",
+        "type": "telegram bot",
+        "botname": "Purificadora_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
         "id": "5fac186d01deb879",
         "type": "mqtt in",
         "z": "8df74e9bb1d5780b",
@@ -169,16 +202,6 @@
                 "420a5fbfe251e4ec"
             ]
         ]
-    },
-    {
-        "id": "48ad3412a0d62412",
-        "type": "comment",
-        "z": "8df74e9bb1d5780b",
-        "name": "aslkdjgaslkdgj prueba 1",
-        "info": "",
-        "x": 1160,
-        "y": 420,
-        "wires": []
     },
     {
         "id": "bfe82911893c8b60",
@@ -218,8 +241,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1140,
-        "y": 300,
+        "x": 1060,
+        "y": 360,
         "wires": [
             []
         ]
@@ -288,7 +311,8 @@
         "y": 300,
         "wires": [
             [
-                "bfe82911893c8b60"
+                "bfe82911893c8b60",
+                "742bbdbd875e1cd4"
             ]
         ]
     },
@@ -306,7 +330,9 @@
         "x": 830,
         "y": 380,
         "wires": [
-            []
+            [
+                "13b899d3f5e3b4e0"
+            ]
         ]
     },
     {
@@ -323,7 +349,9 @@
         "x": 850,
         "y": 220,
         "wires": [
-            []
+            [
+                "3ff8deb93e429fac"
+            ]
         ]
     },
     {
@@ -378,7 +406,7 @@
         "id": "35ab891263c3cfe6",
         "type": "switch",
         "z": "8df74e9bb1d5780b",
-        "name": "",
+        "name": "switch pm",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -391,8 +419,234 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1070,
+        "x": 1080,
+        "y": 140,
+        "wires": [
+            [
+                "259a67894f5fcb24"
+            ]
+        ]
+    },
+    {
+        "id": "0d092ec0d2b160c1",
+        "type": "telegram sender",
+        "z": "8df74e9bb1d5780b",
+        "name": "mandar_mensajes",
+        "bot": "4447d87b9554097f",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1610,
+        "y": 320,
+        "wires": [
+            [
+                "345591f5d947c84e"
+            ]
+        ]
+    },
+    {
+        "id": "b7a782bb561c9b37",
+        "type": "telegram receiver",
+        "z": "8df74e9bb1d5780b",
+        "name": "recibir_mensajes",
+        "bot": "4447d87b9554097f",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 1400,
+        "y": 140,
+        "wires": [
+            [
+                "345591f5d947c84e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "345591f5d947c84e",
+        "type": "debug",
+        "z": "8df74e9bb1d5780b",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1840,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "259a67894f5fcb24",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "mensaje_pm",
+        "func": "\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nmsg.payload = {\n    \"chatId\": \"6179957821\",\n    \"type\": \"message\",\n    \"content\": \"Pm llegó a su límite \" + msg.payload\n}\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 200,
+        "wires": [
+            [
+                "6e7090b27862c0ca",
+                "0d092ec0d2b160c1"
+            ]
+        ]
+    },
+    {
+        "id": "0accc66ffb9f0f2f",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "function 2",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e7090b27862c0ca",
+        "type": "debug",
+        "z": "8df74e9bb1d5780b",
+        "name": "debig timestamp",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1580,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3ff8deb93e429fac",
+        "type": "switch",
+        "z": "8df74e9bb1d5780b",
+        "name": "switch cloro",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
         "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "742bbdbd875e1cd4",
+        "type": "switch",
+        "z": "8df74e9bb1d5780b",
+        "name": "switch agua purificadora",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1110,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13b899d3f5e3b4e0",
+        "type": "switch",
+        "z": "8df74e9bb1d5780b",
+        "name": "switch agua cruda",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1090,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "876fc8c784943269",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "mensaje_pm",
+        "func": "msg.payload={\n    \"chatId\":\"6179957821\",\n    \"type\":\"message\",\n    \"content\":\"Pm llegó a su límite \"+msg.payload\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce42608a6064792d",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "function 4",
+        "func": "msg.payload={\n    \"chatId\":\"6179957821\",\n    \"type\":\"message\",\n    \"content\":\"Pm llegó a su límite \"+msg.payload\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6529821dc2244429",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "function 5",
+        "func": "msg.payload={\n    \"chatId\":\"6179957821\",\n    \"type\":\"message\",\n    \"content\":\"Pm llegó a su límite \"+msg.payload\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 380,
         "wires": [
             []
         ]

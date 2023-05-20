@@ -74,7 +74,7 @@ def generate_nvl_agua_purificada(nvl_agua_purificada):
         return nvl_agua_purificada - random.randint(50,200)
 
 def generate_pm(pm):
-    if pm is None or pm > 600 :
+    if pm is None or pm > 200 :
         return random.randint(0,10)
     else:
         return pm + random.randint(0,20) 
