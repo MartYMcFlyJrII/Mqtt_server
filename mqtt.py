@@ -23,26 +23,31 @@ def connect_mqtt():
 
 def publish(client):
     msg_count = 0
+    nvl_agua_cruda  = None
+    nvl_agua_purificada = None
+    pm  = None
+    cloro = None
     while True:
         time.sleep(5)
         #msg = f"messages: {msg_count}"
-        gas  = random.randint(0,10)
-        humo = random.randint(0,10)
-        luz  = random.randint(0,100)
+        nvl_agua_cruda  = generate_nvl_agua_cruda(nvl_agua_cruda)
+        nvl_agua_purificada = generate_nvl_agua_purificada(nvl_agua_purificada)
+        pm  = generate_pm(pm)
+        cloro = random.randint(0,20)
         
-        msg = '{"Sensor":"Gas","Valor":'+str(gas)+'}'
+        msg = '{"Sensor":"nvl_agua_cruda","Valor":'+str(nvl_agua_cruda)+'}'
         result = client.publish(topic, msg)
 
-        msg = '{"Sensor":"Humo","Valor":'+str(gas)+'}'
-
-        msg = '{"Sensor":"Humedad","Valor":'+str(gas)+'}'
+        msg = '{"Sensor":"nvl_agua_purificada","Valor":'+str(nvl_agua_purificada)+'}'
         result = client.publish(topic, msg)
 
-        msg = '{"Sensor":"CO2","Valor":'+str(gas)+'}'
+        msg = '{"Sensor":"pm","Valor":'+str(pm)+'}'
         result = client.publish(topic, msg)
 
-        msg = '{"Sensor":"Luz","Valor":'+str(luz)+'}'
+        msg = '{"Sensor":"cloro","Valor":'+str(cloro)+'}'
         result = client.publish(topic, msg)
+
+        
         
 
 
@@ -55,6 +60,24 @@ def publish(client):
         else:
             print(f"Failed to send message to topic {topic}")
         msg_count += 1
+
+def generate_nvl_agua_cruda(nvl_agua_cruda):
+    if nvl_agua_cruda is None or nvl_agua_cruda < 200:
+        return random.randint(200,2500)
+    else:
+        return nvl_agua_cruda - random.randint(50,200)
+    
+def generate_nvl_agua_purificada(nvl_agua_purificada):
+    if nvl_agua_purificada is None or nvl_agua_purificada < 200:
+        return random.randint(200,2500)
+    else:
+        return nvl_agua_purificada - random.randint(50,200)
+
+def generate_pm(pm):
+    if pm is None or pm > 600 :
+        return random.randint(0,10)
+    else:
+        return pm + random.randint(0,20) 
 
 
 def run():
