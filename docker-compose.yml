@@ -5,6 +5,7 @@ services:
     image: nodered/node-red:latest
     environment:
       - SERVICE_NAME=node-red
+      - TZ=America/Hermosillo
     ports:
       - "1880:1880"
     volumes:
