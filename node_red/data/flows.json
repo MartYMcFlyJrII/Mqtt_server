@@ -203,7 +203,7 @@
         "tab": "d6ae4db263df279d",
         "order": 3,
         "disp": true,
-        "width": 16,
+        "width": 20,
         "collapse": false,
         "className": ""
     },
@@ -672,7 +672,7 @@
         "name": "",
         "group": "f617dc9145f0f99a",
         "order": 1,
-        "width": 16,
+        "width": 20,
         "height": 12,
         "label": "Agua Cruda",
         "chartType": "line",
@@ -812,6 +812,88 @@
         "y": 700,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "17ddee35d5a2d49d",
+        "type": "ui_text",
+        "z": "8df74e9bb1d5780b",
+        "group": "f617dc9145f0f99a",
+        "order": 2,
+        "width": 20,
+        "height": 1,
+        "name": "",
+        "label": "HORA:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 340,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "78cd3e17cfdf0853",
+        "type": "function",
+        "z": "8df74e9bb1d5780b",
+        "name": "function 1",
+        "func": "// Obtener la hora actual\nvar fechaActual = new Date();\n\n// Formatear la hora en formato de 24 horas\nvar hora = fechaActual.getHours();\nvar minutos = fechaActual.getMinutes();\nvar segundos = fechaActual.getSeconds();\n\n// Ajustar el formato de la hora y los minutos a dos dígitos\nif (hora < 10) {\n    hora = \"0\" + hora;\n}\nif (minutos < 10) {\n    minutos = \"0\" + minutos;\n}\nif (segundos < 10) {\n    segundos = \"0\" + segundos;\n}\n\n// Construir la cadena de tiempo en formato de 24 horas\nvar horaFormateada = hora + \":\" + minutos + \":\" + segundos;\n\n// Enviar la hora formateada al siguiente nodo\nmsg.payload = horaFormateada;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 680,
+        "wires": [
+            [
+                "17ddee35d5a2d49d",
+                "8e7dfa1da88edf53"
+            ]
+        ]
+    },
+    {
+        "id": "8e7dfa1da88edf53",
+        "type": "debug",
+        "z": "8df74e9bb1d5780b",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "52362c082c7aef34",
+        "type": "inject",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 560,
+        "wires": [
+            [
+                "78cd3e17cfdf0853"
+            ]
         ]
     }
 ]
