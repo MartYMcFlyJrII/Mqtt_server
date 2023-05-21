@@ -802,7 +802,7 @@
         "order": 2,
         "width": 0,
         "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "format": "<style>\n    /*Degradado en el fondo*/\n    body {\n        background: -webkit-linear-gradient(55deg,\n                #009785 0%,\n                #245aa5 50%,\n                #b800e9 100%);\n        -webkit-touch-callout: none !important;\n    }\n\n    /*Nav-Bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: transparent !important;\n        color: #FFFFFF;\n    }\n\n    /*Grupos*/\n    ui-card-panel {\n        background-color: rgba(255, 255, 255, 0.1) !important;\n        border-radius: 10px !important;\n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        border: none;\n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-theme {\n        color: rgba(255, 255, 255, 0.5);\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
