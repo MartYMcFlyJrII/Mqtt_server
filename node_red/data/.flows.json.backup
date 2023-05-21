@@ -45,18 +45,18 @@
     {
         "id": "3358530e05362838",
         "type": "ui_group",
-        "name": "Datos de purificadora",
+        "name": "Agua cruda",
         "tab": "d6ae4db263df279d",
         "order": 1,
         "disp": true,
-        "width": "6",
+        "width": 11,
         "collapse": false,
         "className": ""
     },
     {
         "id": "d6ae4db263df279d",
         "type": "ui_tab",
-        "name": "Home",
+        "name": "DATOS DEL AGUA DE PURIFICADORA ISI",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -69,26 +69,29 @@
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "baseFont": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+                "edited": true,
+                "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
                 "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "baseFont": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+                "edited": false,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
                 "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
                     "default": "#0094CE",
                     "value": "#0094CE",
-                    "edited": false
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
                     "value": "#0094CE",
@@ -127,7 +130,7 @@
                     "edited": false
                 },
                 "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                    "value": "Century Gothic,CenturyGothic,AppleGothic,sans-serif"
                 }
             },
             "angularTheme": {
@@ -146,14 +149,14 @@
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
+                "sx": 40,
+                "sy": 40,
+                "gx": 4,
+                "gy": 4,
+                "cx": 5,
+                "cy": 5,
+                "px": 4,
+                "py": 4
             }
         }
     },
@@ -181,6 +184,28 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": false
+    },
+    {
+        "id": "bef28d581646cdb5",
+        "type": "ui_group",
+        "name": "Datos de agua",
+        "tab": "d6ae4db263df279d",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f617dc9145f0f99a",
+        "type": "ui_group",
+        "name": "Nivel de cloro",
+        "tab": "d6ae4db263df279d",
+        "order": 3,
+        "disp": true,
+        "width": 17,
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "5fac186d01deb879",
@@ -288,7 +313,8 @@
         "wires": [
             [
                 "13b899d3f5e3b4e0",
-                "e62e27587f077be4"
+                "e62e27587f077be4",
+                "36fff8cd01ac7321"
             ]
         ]
     },
@@ -337,7 +363,7 @@
         "type": "ui_gauge",
         "z": "8df74e9bb1d5780b",
         "name": "",
-        "group": "3358530e05362838",
+        "group": "bef28d581646cdb5",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -544,40 +570,6 @@
         ]
     },
     {
-        "id": "ce42608a6064792d",
-        "type": "function",
-        "z": "8df74e9bb1d5780b",
-        "name": "function 4",
-        "func": "msg.payload={\n    \"chatId\":\"6179957821\",\n    \"type\":\"message\",\n    \"content\":\"Pm llegó a su límite \"+msg.payload\n}\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1120,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6529821dc2244429",
-        "type": "function",
-        "z": "8df74e9bb1d5780b",
-        "name": "function 5",
-        "func": "msg.payload={\n    \"chatId\":\"6179957821\",\n    \"type\":\"message\",\n    \"content\":\"Pm llegó a su límite \"+msg.payload\n}\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1120,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "14f4c0cf28f19a3e",
         "type": "rbe",
         "z": "8df74e9bb1d5780b",
@@ -678,8 +670,8 @@
         "type": "ui_chart",
         "z": "8df74e9bb1d5780b",
         "name": "",
-        "group": "3358530e05362838",
-        "order": 0,
+        "group": "f617dc9145f0f99a",
+        "order": 1,
         "width": 0,
         "height": 0,
         "label": "Agua Cruda",
@@ -712,7 +704,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 710,
-        "y": 680,
+        "y": 600,
         "wires": [
             []
         ]
@@ -722,8 +714,8 @@
         "type": "ui_gauge",
         "z": "8df74e9bb1d5780b",
         "name": "",
-        "group": "3358530e05362838",
-        "order": 1,
+        "group": "bef28d581646cdb5",
+        "order": 2,
         "width": 0,
         "height": 0,
         "gtype": "wave",
@@ -779,7 +771,7 @@
         "z": "8df74e9bb1d5780b",
         "name": "",
         "group": "3358530e05362838",
-        "order": 4,
+        "order": 2,
         "width": 0,
         "height": 0,
         "gtype": "compass",
@@ -800,5 +792,26 @@
         "x": 660,
         "y": 300,
         "wires": []
+    },
+    {
+        "id": "926d5d7fc335ef07",
+        "type": "ui_template",
+        "z": "8df74e9bb1d5780b",
+        "group": "3358530e05362838",
+        "name": "Node-Red Dashboard Custom CSS",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n\n    /*Degradado en el fondo*/\n    body {\n    background: -webkit-linear-gradient(\n    55deg,\n    #009785 0%,\n    #245aa5 50%,\n    #b800e9 100%\n    );\n    -webkit-touch-callout: none !important;\n    }\n\n    /*Nav-Bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card{\n    background-color: transparent !important;\n    color: #FFFFFF;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 220,
+        "y": 760,
+        "wires": [
+            []
+        ]
     }
 ]

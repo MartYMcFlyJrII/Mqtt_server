@@ -45,18 +45,18 @@
     {
         "id": "3358530e05362838",
         "type": "ui_group",
-        "name": "Datos de purificadora",
+        "name": "Agua cruda",
         "tab": "d6ae4db263df279d",
         "order": 1,
         "disp": true,
-        "width": "6",
+        "width": 11,
         "collapse": false,
         "className": ""
     },
     {
         "id": "d6ae4db263df279d",
         "type": "ui_tab",
-        "name": "Home",
+        "name": "DATOS DEL AGUA DE PURIFICADORA ISI",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -69,26 +69,29 @@
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "baseFont": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+                "edited": true,
+                "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
                 "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "baseFont": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+                "edited": false,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
                 "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
                     "default": "#0094CE",
                     "value": "#0094CE",
-                    "edited": false
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
                     "value": "#0094CE",
@@ -127,7 +130,7 @@
                     "edited": false
                 },
                 "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                    "value": "Century Gothic,CenturyGothic,AppleGothic,sans-serif"
                 }
             },
             "angularTheme": {
@@ -146,14 +149,14 @@
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
+                "sx": 40,
+                "sy": 40,
+                "gx": 4,
+                "gy": 4,
+                "cx": 5,
+                "cy": 5,
+                "px": 4,
+                "py": 4
             }
         }
     },
@@ -181,6 +184,28 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": false
+    },
+    {
+        "id": "bef28d581646cdb5",
+        "type": "ui_group",
+        "name": "Datos de agua",
+        "tab": "d6ae4db263df279d",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f617dc9145f0f99a",
+        "type": "ui_group",
+        "name": "Nivel de cloro",
+        "tab": "d6ae4db263df279d",
+        "order": 3,
+        "disp": true,
+        "width": 17,
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "5fac186d01deb879",
@@ -288,7 +313,8 @@
         "wires": [
             [
                 "13b899d3f5e3b4e0",
-                "e62e27587f077be4"
+                "e62e27587f077be4",
+                "36fff8cd01ac7321"
             ]
         ]
     },
@@ -337,7 +363,7 @@
         "type": "ui_gauge",
         "z": "8df74e9bb1d5780b",
         "name": "",
-        "group": "3358530e05362838",
+        "group": "bef28d581646cdb5",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -644,8 +670,8 @@
         "type": "ui_chart",
         "z": "8df74e9bb1d5780b",
         "name": "",
-        "group": "3358530e05362838",
-        "order": 0,
+        "group": "f617dc9145f0f99a",
+        "order": 1,
         "width": 0,
         "height": 0,
         "label": "Agua Cruda",
@@ -677,7 +703,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 730,
+        "x": 710,
         "y": 600,
         "wires": [
             []
@@ -688,8 +714,8 @@
         "type": "ui_gauge",
         "z": "8df74e9bb1d5780b",
         "name": "",
-        "group": "3358530e05362838",
-        "order": 1,
+        "group": "bef28d581646cdb5",
+        "order": 2,
         "width": 0,
         "height": 0,
         "gtype": "wave",
@@ -745,7 +771,7 @@
         "z": "8df74e9bb1d5780b",
         "name": "",
         "group": "3358530e05362838",
-        "order": 4,
+        "order": 2,
         "width": 0,
         "height": 0,
         "gtype": "compass",
