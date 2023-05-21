@@ -792,26 +792,5 @@
         "x": 660,
         "y": 300,
         "wires": []
-    },
-    {
-        "id": "926d5d7fc335ef07",
-        "type": "ui_template",
-        "z": "8df74e9bb1d5780b",
-        "group": "3358530e05362838",
-        "name": "Node-Red Dashboard Custom CSS",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n\n    /*Degradado en el fondo*/\n    body {\n    background: -webkit-linear-gradient(\n    55deg,\n    #009785 0%,\n    #245aa5 50%,\n    #b800e9 100%\n    );\n    -webkit-touch-callout: none !important;\n    }\n\n    /*Nav-Bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card{\n    background-color: transparent !important;\n    color: #FFFFFF;\n    }\n</style>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "global",
-        "className": "",
-        "x": 220,
-        "y": 760,
-        "wires": [
-            []
-        ]
     }
 ]
