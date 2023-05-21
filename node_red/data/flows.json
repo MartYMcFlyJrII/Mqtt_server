@@ -208,13 +208,6 @@
         "className": ""
     },
     {
-        "id": "fd04484c38e7c2a0",
-        "type": "ui_tab",
-        "name": "Tab 2",
-        "icon": "dashboard",
-        "order": 2
-    },
-    {
         "id": "bf0dcda89f7540ef",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
@@ -236,7 +229,7 @@
         "className": ""
     },
     {
-        "id": "ab4fc47aee5fc6f6",
+        "id": "094304d67b0d975f",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -246,7 +239,7 @@
         "height": 1
     },
     {
-        "id": "762b8d7fd44619d0",
+        "id": "28cf0c4e96a9e05f",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -256,7 +249,7 @@
         "height": 1
     },
     {
-        "id": "3dadb0580999926d",
+        "id": "54f63b0435d3fce4",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -266,7 +259,7 @@
         "height": 1
     },
     {
-        "id": "1a3a2e354f3795cd",
+        "id": "df5c3f84d5f7ee56",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -276,7 +269,7 @@
         "height": 1
     },
     {
-        "id": "0f6f643a36bea927",
+        "id": "e39b718ce3d8b669",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -286,7 +279,7 @@
         "height": 1
     },
     {
-        "id": "97c25bb89776d729",
+        "id": "5af2c54f9c66f405",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -296,7 +289,7 @@
         "height": 1
     },
     {
-        "id": "53e99309e3ab4095",
+        "id": "711a6d95e5e53d06",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -306,7 +299,7 @@
         "height": 1
     },
     {
-        "id": "ec01606962861252",
+        "id": "09b2d6f330fd10dc",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -316,7 +309,7 @@
         "height": 1
     },
     {
-        "id": "bb1c8451193e106c",
+        "id": "0eabfa5fbef76c1f",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -326,7 +319,7 @@
         "height": 1
     },
     {
-        "id": "6e26348c06b23edd",
+        "id": "c1eb444afa997d1b",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -336,7 +329,7 @@
         "height": 1
     },
     {
-        "id": "2773c57ca720c6a2",
+        "id": "ddc69ed33c6ffaf4",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -346,7 +339,7 @@
         "height": 1
     },
     {
-        "id": "26e862bb25318449",
+        "id": "afcbe0af23334f89",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -356,7 +349,7 @@
         "height": 1
     },
     {
-        "id": "07439865ec28d878",
+        "id": "c0d3644a2073aaee",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -366,7 +359,7 @@
         "height": 1
     },
     {
-        "id": "c93887f8c97640a5",
+        "id": "964a621c54846afd",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -376,7 +369,7 @@
         "height": 1
     },
     {
-        "id": "050a88a595235af7",
+        "id": "72c8de0b64ceba39",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -386,7 +379,7 @@
         "height": 1
     },
     {
-        "id": "7267edc057055b4c",
+        "id": "7885f0576d145d1c",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -396,7 +389,7 @@
         "height": 1
     },
     {
-        "id": "e35878d387ba169e",
+        "id": "fe7c0f62c339dd70",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -406,7 +399,7 @@
         "height": 1
     },
     {
-        "id": "86f8bc41ec9d5b0f",
+        "id": "e9f72bd3023cd592",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -416,7 +409,7 @@
         "height": 1
     },
     {
-        "id": "05ba660934773075",
+        "id": "5473787d4bb346de",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -426,7 +419,7 @@
         "height": 1
     },
     {
-        "id": "b7f173a8041845ce",
+        "id": "b83bb66780b1070d",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -436,7 +429,7 @@
         "height": 1
     },
     {
-        "id": "975a4bfa7d2338a9",
+        "id": "ff3f1b55aabfd2e9",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -446,7 +439,7 @@
         "height": 1
     },
     {
-        "id": "3521a4b0169f8a8a",
+        "id": "1de90d558d31d8c5",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -456,7 +449,7 @@
         "height": 1
     },
     {
-        "id": "2d82ae4510ab317d",
+        "id": "4a3b745e219bf8b3",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -466,7 +459,7 @@
         "height": 1
     },
     {
-        "id": "43e1d38ede423ae3",
+        "id": "de650e7f56660f6e",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -476,7 +469,7 @@
         "height": 1
     },
     {
-        "id": "baeb4c204b01fe60",
+        "id": "cc937fe467e6ccbe",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -486,7 +479,7 @@
         "height": 1
     },
     {
-        "id": "7eeb94d7f7637083",
+        "id": "b442257e3456f0b6",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -496,7 +489,7 @@
         "height": 1
     },
     {
-        "id": "2bbeb194f8bad0c5",
+        "id": "d38af5e34e9e9e59",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -506,7 +499,7 @@
         "height": 1
     },
     {
-        "id": "fa64dbb51a25f81a",
+        "id": "c92b31bfda3ffbc4",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -516,7 +509,7 @@
         "height": 1
     },
     {
-        "id": "ceb49ea22a6fda2d",
+        "id": "47e35f4e1b041b4c",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -526,7 +519,7 @@
         "height": 1
     },
     {
-        "id": "5a172ec60193190e",
+        "id": "9780ca94f2109cb0",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -536,7 +529,7 @@
         "height": 1
     },
     {
-        "id": "a716846f2c6820db",
+        "id": "1853a4f8082029af",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -546,7 +539,7 @@
         "height": 1
     },
     {
-        "id": "5185feac7121a845",
+        "id": "8f50c7a2f0b7c368",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -556,7 +549,7 @@
         "height": 1
     },
     {
-        "id": "5e956019d576a332",
+        "id": "fd447124ab8fccf7",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -566,7 +559,7 @@
         "height": 1
     },
     {
-        "id": "bba68b75722ee86f",
+        "id": "51278e097918303d",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -576,7 +569,7 @@
         "height": 1
     },
     {
-        "id": "dde884cebfb5f3a6",
+        "id": "4edf269c0d72f01a",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -586,7 +579,7 @@
         "height": 1
     },
     {
-        "id": "43c29e03211caf03",
+        "id": "db544f69cfe30d9c",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -596,7 +589,7 @@
         "height": 1
     },
     {
-        "id": "850211192f0b6c40",
+        "id": "e09e1317c9d29c47",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -606,7 +599,7 @@
         "height": 1
     },
     {
-        "id": "b828b965469551ec",
+        "id": "1483b4e707cac1f8",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -616,7 +609,7 @@
         "height": 1
     },
     {
-        "id": "fa2374e672dd9248",
+        "id": "f54dd54fd60c767e",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -626,7 +619,7 @@
         "height": 1
     },
     {
-        "id": "1911e4ecd8e5e9af",
+        "id": "b1a8e9a43147bcd8",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -636,7 +629,7 @@
         "height": 1
     },
     {
-        "id": "f1137c4a7d3cc9e5",
+        "id": "2c60c75631fde4e3",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -646,7 +639,7 @@
         "height": 1
     },
     {
-        "id": "329a31757729b826",
+        "id": "b905ebe900f88f41",
         "type": "ui_spacer",
         "z": "8df74e9bb1d5780b",
         "name": "spacer",
@@ -654,16 +647,6 @@
         "order": 24,
         "width": 1,
         "height": 1
-    },
-    {
-        "id": "463c7c920828473c",
-        "type": "ui_spacer",
-        "z": "8df74e9bb1d5780b",
-        "name": "spacer",
-        "group": "399bb99a53e8bf15",
-        "order": 4,
-        "width": "15",
-        "height": "1"
     },
     {
         "id": "5fac186d01deb879",
@@ -1262,7 +1245,7 @@
         "order": 1,
         "width": 15,
         "height": 1,
-        "format": "<style>\n    /*Degradado en el fondo*/\n    body {\n        background: -webkit-linear-gradient(55deg,\n                #009785 0%,\n                #3855AB 50%,\n                #AF24E3 100%);\n        -webkit-touch-callout: none !important;\n    }\n\n    /*Nav-Bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: transparent !important;\n        color: #FFFFFF;\n    }\n\n    .md-toolbar-tools h1,\n    .md-toolbar-tools h2,\n    .md-toolbar-tools h3 {\n        font-size: inherit;\n        font-weight: bold;\n        margin: inherit;\n        color: #FFFFFF !important;\n    }\n\n    body.nr-dashboard-theme md-toolbar .md-toolbar-tools {\n    color: #fff;\n    filter: invert(0%); \n    }\n\n    /* Grupo de cards */\n    /*\n    #Tab_DATOS_DE_AGUA_DE_PURIFICADORA_JIDAL{\n    display: flex;\n    gap: 1rem;\n    }*/\n\n\n\n    /*Grupos*/\n    ui-card-panel {\n        background-color: rgba(255, 255, 255, 0.1) !important;\n        border-radius: 10px !important;\n       \n        \n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        border: none;\n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-theme {\n        color: rgba(255, 255, 255, 0.5);\n    }\n\n\n    /*Color de letras de graficas*/\n\n    .nr-dashboard-theme .nr-dashboard-gauge text:not(.g-nc text, .g-ppm text) {\n        fill: rgb(255, 255, 255) !important;\n        margin: 8px;\n        font-size:32px;\n        font-weight: bold;\n        /*text-anchor: middle;\n        dominant-baseline: middle;*/\n        transform: translate(50%, 50%);\n      \n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n        color: #a3eaff;\n        font-weight: bolder;\n        font-size: 141%;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-title {\n        margin: 6px 0px 24px 0px;\n        z-index: 1;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-titlel {\n        font-size: larger;\n        font-weight: bold;\n        z-index: 1;\n        opacity: 51%;\n    }\n\n    canvas.chart.chart-line {\n        height: calc(100% + -15px) !important;\n        width: calc(100%) !important;\n        color: white !important;\n    }\n\n    .g-nc text tspan, .g-ppm text tspan{\n    font-weight: bolder;\n    font-size: 141%;\n    }\n\n   \n</style>",
+        "format": "<style>\n    /*Degradado en el fondo*/\n    body {\n        background: -webkit-linear-gradient(55deg,\n                #009785 0%,\n                #3855AB 50%,\n                #AF24E3 100%);\n        -webkit-touch-callout: none !important;\n    }\n\n    /*Nav-Bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: transparent !important;\n        color: #FFFFFF;\n    }\n\n    .md-toolbar-tools h1,\n    .md-toolbar-tools h2,\n    .md-toolbar-tools h3 {\n        font-size: inherit;\n        font-weight: bold;\n        margin: inherit;\n        color: #FFFFFF !important;\n    }\n\n    body.nr-dashboard-theme md-toolbar .md-toolbar-tools {\n    color: #fff;\n    filter: invert(0%); \n    }\n\n    /*Grupos*/\n    ui-card-panel {\n        background-color: rgba(255, 255, 255, 0.1) !important;\n        border-radius: 10px !important;\n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        border: none;\n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-theme {\n        color: rgba(255, 255, 255, 0.5);\n    }\n\n\n    /*Color de letras de graficas*/\n\n    .nr-dashboard-theme .nr-dashboard-gauge text:not(.g-nc text, .g-ppm text) {\n        fill: rgb(255, 255, 255) !important;\n        margin: 8px;\n        font-size:32px;\n        font-weight: bold;\n        /*text-anchor: middle;\n        dominant-baseline: middle;*/\n        transform: translate(50%, 50%);\n      \n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n        color: #a3eaff;\n        font-weight: bolder;\n        font-size: 141%;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-title {\n        margin: 6px 0px 24px 0px;\n        z-index: 1;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-titlel {\n        font-size: larger;\n        font-weight: bold;\n        z-index: 1;\n        opacity: 51%;\n    }\n\n    canvas.chart.chart-line {\n        height: calc(100% + -15px) !important;\n        width: calc(100%) !important;\n        color: white !important;\n    }\n\n    .g-nc text tspan, .g-ppm text tspan{\n    font-weight: bolder;\n    font-size: 141%;\n    }\n\n    .hora{\n    font-weight: bold;\n    font-size: 150%;\n    line-height: 3;\n    }\n    .sucursal{\n    font-weight: bold;\n    font-size: 150%;\n    line-height: 3;\n    }\n   \n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -1282,11 +1265,11 @@
         "order": 1,
         "width": 15,
         "height": 1,
-        "name": "",
+        "name": "Hora",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-left",
-        "className": "",
+        "className": "hora",
         "x": 370,
         "y": 940,
         "wires": []
@@ -1295,14 +1278,14 @@
         "id": "78cd3e17cfdf0853",
         "type": "function",
         "z": "8df74e9bb1d5780b",
-        "name": "function 1",
+        "name": "formatear_hora",
         "func": "// Obtener la hora actual\nvar fechaActual = new Date();\n\n// Formatear la hora en formato de 24 horas\nvar hora = fechaActual.getHours();\nvar minutos = fechaActual.getMinutes();\nvar segundos = fechaActual.getSeconds();\n\n// Ajustar el formato de la hora y los minutos a dos dígitos\nif (hora < 10) {\n    hora = \"0\" + hora;\n}\nif (minutos < 10) {\n    minutos = \"0\" + minutos;\n}\nif (segundos < 10) {\n    segundos = \"0\" + segundos;\n}\n\n// Construir la cadena de tiempo en formato de 24 horas\nvar horaFormateada = hora + \":\" + minutos + \":\" + segundos;\n\n// Enviar la hora formateada al siguiente nodo\nmsg.payload = horaFormateada;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 240,
+        "x": 260,
         "y": 1020,
         "wires": [
             [
@@ -1315,15 +1298,16 @@
         "id": "8e7dfa1da88edf53",
         "type": "debug",
         "z": "8df74e9bb1d5780b",
-        "name": "debug 1",
+        "name": "revisar_hora",
         "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 380,
+        "x": 390,
         "y": 1100,
         "wires": []
     },
@@ -1331,7 +1315,7 @@
         "id": "52362c082c7aef34",
         "type": "inject",
         "z": "8df74e9bb1d5780b",
-        "name": "",
+        "name": "obtener_hora",
         "props": [
             {
                 "p": "payload"
@@ -1348,7 +1332,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
+        "x": 160,
         "y": 900,
         "wires": [
             [
@@ -1574,5 +1558,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "5169a8683fe38d4b",
+        "type": "ui_text",
+        "z": "8df74e9bb1d5780b",
+        "group": "399bb99a53e8bf15",
+        "order": 2,
+        "width": 15,
+        "height": 1,
+        "name": "Direccion",
+        "label": "",
+        "format": "C. Olivares 350, Las Granjas, 83250 Hermosillo, Son.",
+        "layout": "row-spread",
+        "className": "sucursal",
+        "x": 380,
+        "y": 1160,
+        "wires": []
     }
 ]
