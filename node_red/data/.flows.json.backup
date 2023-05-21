@@ -45,11 +45,11 @@
     {
         "id": "3358530e05362838",
         "type": "ui_group",
-        "name": "Agua cruda",
+        "name": "Agua y cloro",
         "tab": "d6ae4db263df279d",
         "order": 1,
         "disp": true,
-        "width": 9,
+        "width": "9",
         "collapse": false,
         "className": ""
     },

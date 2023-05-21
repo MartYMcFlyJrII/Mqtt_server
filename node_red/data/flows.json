@@ -199,7 +199,7 @@
     {
         "id": "f617dc9145f0f99a",
         "type": "ui_group",
-        "name": "CANTIDAD DE AGUA CRUDA POR HORA",
+        "name": "Agua cruda por hora",
         "tab": "d6ae4db263df279d",
         "order": 3,
         "disp": true,
