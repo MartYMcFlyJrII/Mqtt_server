@@ -45,18 +45,18 @@
     {
         "id": "3358530e05362838",
         "type": "ui_group",
-        "name": "Agua y cloro",
+        "name": "Hora",
         "tab": "d6ae4db263df279d",
-        "order": 1,
+        "order": 2,
         "disp": true,
-        "width": 6,
+        "width": 15,
         "collapse": false,
         "className": ""
     },
     {
         "id": "d6ae4db263df279d",
         "type": "ui_tab",
-        "name": "DATOS DE AGUA DE PURIFICADORA JIDAL",
+        "name": "Datos de agua purificada JIDAL",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -142,7 +142,7 @@
             }
         },
         "site": {
-            "name": "Node-RED Dashboard",
+            "name": "Datos purificadora",
             "hideToolbar": "false",
             "allowSwipe": "false",
             "lockMenu": "false",
@@ -188,24 +188,472 @@
     {
         "id": "bef28d581646cdb5",
         "type": "ui_group",
-        "name": "Datos de agua",
+        "name": "Tanque agua purificada",
         "tab": "d6ae4db263df279d",
-        "order": 2,
+        "order": 3,
         "disp": true,
-        "width": 6,
+        "width": 15,
         "collapse": false,
         "className": ""
     },
     {
         "id": "f617dc9145f0f99a",
         "type": "ui_group",
-        "name": "Agua cruda por hora",
+        "name": "Tanque agua cruda",
         "tab": "d6ae4db263df279d",
-        "order": 3,
+        "order": 4,
         "disp": true,
-        "width": 20,
+        "width": 15,
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "fd04484c38e7c2a0",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "bf0dcda89f7540ef",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "84491cc0412c730f",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "399bb99a53e8bf15",
+        "type": "ui_group",
+        "name": "Sucursal 1",
+        "tab": "d6ae4db263df279d",
+        "order": 1,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ab4fc47aee5fc6f6",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "762b8d7fd44619d0",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3dadb0580999926d",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1a3a2e354f3795cd",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0f6f643a36bea927",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "97c25bb89776d729",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "53e99309e3ab4095",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ec01606962861252",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bb1c8451193e106c",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6e26348c06b23edd",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2773c57ca720c6a2",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "26e862bb25318449",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "07439865ec28d878",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c93887f8c97640a5",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "050a88a595235af7",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7267edc057055b4c",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e35878d387ba169e",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "86f8bc41ec9d5b0f",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "05ba660934773075",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b7f173a8041845ce",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "975a4bfa7d2338a9",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "bef28d581646cdb5",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3521a4b0169f8a8a",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2d82ae4510ab317d",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "43e1d38ede423ae3",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "baeb4c204b01fe60",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7eeb94d7f7637083",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2bbeb194f8bad0c5",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fa64dbb51a25f81a",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ceb49ea22a6fda2d",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5a172ec60193190e",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a716846f2c6820db",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5185feac7121a845",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5e956019d576a332",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bba68b75722ee86f",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dde884cebfb5f3a6",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "43c29e03211caf03",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "850211192f0b6c40",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b828b965469551ec",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fa2374e672dd9248",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1911e4ecd8e5e9af",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f1137c4a7d3cc9e5",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "329a31757729b826",
+        "type": "ui_spacer",
+        "z": "8df74e9bb1d5780b",
+        "name": "spacer",
+        "group": "f617dc9145f0f99a",
+        "order": 24,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "5fac186d01deb879",
@@ -293,7 +741,8 @@
         "wires": [
             [
                 "742bbdbd875e1cd4",
-                "83618e7e9f8afead"
+                "83618e7e9f8afead",
+                "e51c091137a9a621"
             ]
         ]
     },
@@ -364,10 +813,10 @@
         "z": "8df74e9bb1d5780b",
         "name": "",
         "group": "bef28d581646cdb5",
-        "order": 1,
+        "order": 5,
         "width": 6,
-        "height": 6,
-        "gtype": "wave",
+        "height": 7,
+        "gtype": "gage",
         "title": "Partes por millón",
         "label": "pm",
         "format": "{{value}}",
@@ -415,6 +864,7 @@
         "id": "0d092ec0d2b160c1",
         "type": "telegram sender",
         "z": "8df74e9bb1d5780b",
+        "d": true,
         "name": "mandar_mensajes",
         "bot": "4447d87b9554097f",
         "haserroroutput": false,
@@ -672,9 +1122,9 @@
         "name": "",
         "group": "f617dc9145f0f99a",
         "order": 1,
-        "width": 20,
-        "height": 12,
-        "label": "Agua Cruda",
+        "width": 15,
+        "height": 9,
+        "label": "Historial Agua Cruda",
         "chartType": "line",
         "legend": "true",
         "xformat": "HH:mm:ss",
@@ -703,7 +1153,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "c-ag",
-        "x": 650,
+        "x": 680,
         "y": 880,
         "wires": [
             []
@@ -715,12 +1165,12 @@
         "z": "8df74e9bb1d5780b",
         "name": "",
         "group": "bef28d581646cdb5",
-        "order": 2,
+        "order": 3,
         "width": 6,
-        "height": 6,
+        "height": 7,
         "gtype": "wave",
         "title": "Agua purificada",
-        "label": "Litros",
+        "label": " Litros",
         "format": "{{value}}",
         "min": 0,
         "max": "2500",
@@ -733,7 +1183,7 @@
         "seg2": "",
         "diff": false,
         "className": "g-ap",
-        "x": 640,
+        "x": 660,
         "y": 400,
         "wires": []
     },
@@ -742,13 +1192,13 @@
         "type": "ui_gauge",
         "z": "8df74e9bb1d5780b",
         "name": "",
-        "group": "3358530e05362838",
-        "order": 1,
+        "group": "f617dc9145f0f99a",
+        "order": 3,
         "width": 6,
-        "height": 6,
+        "height": 7,
         "gtype": "wave",
         "title": "Agua cruda",
-        "label": "Litros",
+        "label": " Litros",
         "format": "{{value}}",
         "min": 0,
         "max": "2500",
@@ -762,7 +1212,7 @@
         "diff": false,
         "className": "g-ac",
         "x": 650,
-        "y": 660,
+        "y": 680,
         "wires": []
     },
     {
@@ -770,13 +1220,13 @@
         "type": "ui_gauge",
         "z": "8df74e9bb1d5780b",
         "name": "",
-        "group": "3358530e05362838",
-        "order": 2,
+        "group": "f617dc9145f0f99a",
+        "order": 5,
         "width": 6,
-        "height": 6,
-        "gtype": "compass",
+        "height": 7,
+        "gtype": "gage",
         "title": "Nivel de cloro",
-        "label": "units",
+        "label": "  ml/gl",
         "format": "{{value}}",
         "min": 0,
         "max": "20",
@@ -797,19 +1247,19 @@
         "id": "f03d0c9c9d3cb137",
         "type": "ui_template",
         "z": "8df74e9bb1d5780b",
-        "group": "3358530e05362838",
+        "group": "399bb99a53e8bf15",
         "name": "Node-Red Dashboard Custom CSS",
-        "order": 3,
-        "width": 6,
+        "order": 1,
+        "width": 15,
         "height": 1,
-        "format": "<style>\n    /*Degradado en el fondo*/\n    body {\n        background: -webkit-linear-gradient(55deg,\n                #009785 0%,\n                #3855AB 50%,\n                #AF24E3 100%);\n        -webkit-touch-callout: none !important;\n    }\n\n    /*Nav-Bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: transparent !important;\n        color: #FFFFFF;\n    }\n\n    .md-toolbar-tools h1,\n    .md-toolbar-tools h2,\n    .md-toolbar-tools h3 {\n        font-size: inherit;\n        font-weight: bold;\n        margin: inherit;\n        color: #FFFFFF !important;\n    }\n\n    body.nr-dashboard-theme md-toolbar .md-toolbar-tools {\n    color: #fff;\n    filter: invert(0%); \n    }\n\n    \n\n    /*Grupos*/\n    ui-card-panel {\n        background-color: rgba(255, 255, 255, 0.1) !important;\n        border-radius: 10px !important;\n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        border: none;\n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-theme {\n        color: rgba(255, 255, 255, 0.5);\n    }\n\n\n    /*Color de letras de graficas*/\n\n    .nr-dashboard-theme .nr-dashboard-gauge text:not(.g-nc text) {\n        fill: rgb(255, 255, 255) !important;\n        margin: 8px;\n        font-size:32px;\n        font-weight: bold;\n        text-anchor: middle;\n        dominant-baseline: middle;\n        transform: translate(50%, 50%);\n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n        color: #a3eaff;\n        font-weight: bolder;\n        font-size: 141%;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-title {\n        margin: 6px 0px 24px 0px;\n        z-index: 1;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-titlel {\n        font-size: larger;\n        font-weight: bold;\n        z-index: 1;\n        opacity: 51%;\n    }\n\n    canvas.chart.chart-line {\n        height: calc(100% + -15px) !important;\n        width: calc(100%) !important;\n        color: white !important;\n    }\n</style>",
+        "format": "<style>\n    /*Degradado en el fondo*/\n    body {\n        background: -webkit-linear-gradient(55deg,\n                #009785 0%,\n                #3855AB 50%,\n                #AF24E3 100%);\n        -webkit-touch-callout: none !important;\n    }\n\n    /*Nav-Bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: transparent !important;\n        color: #FFFFFF;\n    }\n\n    .md-toolbar-tools h1,\n    .md-toolbar-tools h2,\n    .md-toolbar-tools h3 {\n        font-size: inherit;\n        font-weight: bold;\n        margin: inherit;\n        color: #FFFFFF !important;\n    }\n\n    body.nr-dashboard-theme md-toolbar .md-toolbar-tools {\n    color: #fff;\n    filter: invert(0%); \n    }\n\n    /* Grupo de cards */\n    /*\n    #Tab_DATOS_DE_AGUA_DE_PURIFICADORA_JIDAL{\n    display: flex;\n    gap: 1rem;\n    }*/\n\n\n\n    /*Grupos*/\n    ui-card-panel {\n        background-color: rgba(255, 255, 255, 0.1) !important;\n        border-radius: 10px !important;\n       \n        \n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        border: none;\n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-theme {\n        color: rgba(255, 255, 255, 0.5);\n    }\n\n\n    /*Color de letras de graficas*/\n\n    .nr-dashboard-theme .nr-dashboard-gauge text:not(.g-nc text, .g-ppm text) {\n        fill: rgb(255, 255, 255) !important;\n        margin: 8px;\n        font-size:32px;\n        font-weight: bold;\n        /*text-anchor: middle;\n        dominant-baseline: middle;*/\n        transform: translate(50%, 50%);\n      \n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n        color: #a3eaff;\n        font-weight: bolder;\n        font-size: 141%;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-title {\n        margin: 6px 0px 24px 0px;\n        z-index: 1;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-titlel {\n        font-size: larger;\n        font-weight: bold;\n        z-index: 1;\n        opacity: 51%;\n    }\n\n    canvas.chart.chart-line {\n        height: calc(100% + -15px) !important;\n        width: calc(100%) !important;\n        color: white !important;\n    }\n\n    .g-nc text tspan, .g-ppm text tspan{\n    font-weight: bolder;\n    font-size: 141%;\n    }\n\n   \n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 580,
-        "y": 980,
+        "x": 680,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -818,17 +1268,17 @@
         "id": "17ddee35d5a2d49d",
         "type": "ui_text",
         "z": "8df74e9bb1d5780b",
-        "group": "f617dc9145f0f99a",
-        "order": 2,
-        "width": 20,
+        "group": "3358530e05362838",
+        "order": 1,
+        "width": 15,
         "height": 1,
         "name": "",
-        "label": "HORA:",
+        "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 320,
-        "y": 880,
+        "x": 370,
+        "y": 940,
         "wires": []
     },
     {
@@ -842,8 +1292,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 180,
-        "y": 960,
+        "x": 240,
+        "y": 1020,
         "wires": [
             [
                 "17ddee35d5a2d49d",
@@ -863,8 +1313,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 320,
-        "y": 1040,
+        "x": 380,
+        "y": 1100,
         "wires": []
     },
     {
@@ -888,8 +1338,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 90,
-        "y": 840,
+        "x": 150,
+        "y": 900,
         "wires": [
             [
                 "78cd3e17cfdf0853"
@@ -1057,7 +1507,7 @@
         "type": "function",
         "z": "8df74e9bb1d5780b",
         "name": "mensaje_pm_comando",
-        "func": "var pm = global.get('pm') || 0;\nmsg.payload = {\n    \"chatId\": \"6179957821\",\n    \"type\": \"message\",\n    \"content\": \"El nivel de limpieza del agua es de \" + pm\n}\nreturn msg;\n",
+        "func": "var pm = global.get('pm') || 0;\nmsg.payload = {\n    \"chatId\": \"6179957821\",\n    \"type\": \"message\",\n    \"content\": \"El nivel de limpieza del agua es de \" + pm+\" partes por millón\"\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1069,6 +1519,50 @@
             [
                 "0d092ec0d2b160c1"
             ]
+        ]
+    },
+    {
+        "id": "e51c091137a9a621",
+        "type": "ui_chart",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "group": "bef28d581646cdb5",
+        "order": 1,
+        "width": 15,
+        "height": 9,
+        "label": "Historial Agua Purirficada",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "monotone",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "2500",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ffffff",
+            "#ffffff",
+            "#ffffff",
+            "#ffffff",
+            "#ffffff",
+            "#ffffff",
+            "#ffffff",
+            "#ffffff",
+            "#ffffff"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "c-ag",
+        "x": 690,
+        "y": 620,
+        "wires": [
+            []
         ]
     }
 ]
