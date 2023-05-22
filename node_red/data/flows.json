@@ -639,6 +639,11 @@
         "height": 1
     },
     {
+        "id": "fbe34357dd768069",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "Purificador 1"
+    },
+    {
         "id": "5fac186d01deb879",
         "type": "mqtt in",
         "z": "8df74e9bb1d5780b",
@@ -847,13 +852,12 @@
         "id": "0d092ec0d2b160c1",
         "type": "telegram sender",
         "z": "8df74e9bb1d5780b",
-        "d": true,
         "name": "mandar_mensajes",
         "bot": "4447d87b9554097f",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 1510,
-        "y": 360,
+        "x": 1570,
+        "y": 380,
         "wires": [
             []
         ]
@@ -888,7 +892,8 @@
         "y": 140,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -998,7 +1003,8 @@
         "y": 540,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1037,7 +1043,8 @@
         "y": 320,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1056,7 +1063,8 @@
         "y": 600,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1075,7 +1083,8 @@
         "y": 700,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1094,7 +1103,8 @@
         "y": 760,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1369,7 +1379,8 @@
         "y": 260,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1413,7 +1424,8 @@
         "y": 460,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1457,7 +1469,8 @@
         "y": 820,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1501,7 +1514,9 @@
         "y": 80,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b",
+                "68989d6bf3259e19"
             ]
         ]
     },
@@ -1564,6 +1579,39 @@
         "className": "sucursal",
         "x": 380,
         "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "b3158ccc575e8c7b",
+        "type": "node-red-contrib-whatsapp-cmb-send-message",
+        "z": "8df74e9bb1d5780b",
+        "name": "",
+        "account": "fbe34357dd768069",
+        "text": "payload.content",
+        "inputtypemessage": "msg",
+        "rejectssl": false,
+        "x": 1580,
+        "y": 660,
+        "wires": [
+            [
+                "68989d6bf3259e19"
+            ]
+        ]
+    },
+    {
+        "id": "68989d6bf3259e19",
+        "type": "debug",
+        "z": "8df74e9bb1d5780b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2160,
+        "y": 40,
         "wires": []
     }
 ]

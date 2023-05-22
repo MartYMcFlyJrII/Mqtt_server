@@ -5,6 +5,7 @@
     "private": true,
     "dependencies": {
         "node-red-contrib-telegrambot": "~15.1.1",
+        "node-red-contrib-whatsapp-cmb": "~1.0.2",
         "node-red-dashboard": "~3.4.0"
     }
 }

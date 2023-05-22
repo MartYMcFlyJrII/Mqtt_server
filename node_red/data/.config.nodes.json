@@ -679,5 +679,25 @@
                 "file": "/data/node_modules/node-red-contrib-telegrambot/telegrambot/99-telegrambot.js"
             }
         }
+    },
+    "node-red-contrib-whatsapp-cmb": {
+        "name": "node-red-contrib-whatsapp-cmb",
+        "version": "1.0.2",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "whatsapp": {
+                "name": "whatsapp",
+                "types": [
+                    "node-red-contrib-whatsapp-cmb-account",
+                    "node-red-contrib-whatsapp-cmb-send-message"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-whatsapp-cmb",
+                "file": "/data/node_modules/node-red-contrib-whatsapp-cmb/nodes/whatsapp.js"
+            }
+        }
     }
 }
