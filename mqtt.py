@@ -25,14 +25,14 @@ def publish(client):
     msg_count = 0
     nvl_agua_cruda  = None
     nvl_agua_purificada = None
-    pm  = None
+    pm  = pm
     cloro = None
     while True:
         time.sleep(5)
         #msg = f"messages: {msg_count}"
         nvl_agua_cruda  = generate_nvl_agua_cruda(nvl_agua_cruda)
         nvl_agua_purificada = generate_nvl_agua_purificada(nvl_agua_purificada)
-        pm  = generate_pm(pm)
+        pm  =  generate_pm(pm) #pm +1 if pm <202 else 198
         cloro = random.randint(0,20)
         
         msg = '{"Sensor":"nvl_agua_cruda","Valor":'+str(nvl_agua_cruda)+'}'

@@ -833,18 +833,18 @@
         "rules": [
             {
                 "t": "gte",
-                "v": "100",
+                "v": "200",
                 "vt": "num"
             }
         ],
-        "checkall": "true",
-        "repair": false,
+        "checkall": "false",
+        "repair": true,
         "outputs": 1,
         "x": 620,
         "y": 140,
         "wires": [
             [
-                "14f4c0cf28f19a3e"
+                "259a67894f5fcb24"
             ]
         ]
     },
@@ -856,8 +856,8 @@
         "bot": "4447d87b9554097f",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 1510,
-        "y": 360,
+        "x": 1570,
+        "y": 380,
         "wires": [
             []
         ]
@@ -888,11 +888,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
+        "x": 1050,
         "y": 140,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1002,27 +1003,8 @@
         "y": 540,
         "wires": [
             [
-                "0d092ec0d2b160c1"
-            ]
-        ]
-    },
-    {
-        "id": "14f4c0cf28f19a3e",
-        "type": "rbe",
-        "z": "8df74e9bb1d5780b",
-        "name": "",
-        "func": "narrowbandEq",
-        "gap": "1",
-        "start": "",
-        "inout": "in",
-        "septopics": true,
-        "property": "payload",
-        "topi": "topic",
-        "x": 810,
-        "y": 140,
-        "wires": [
-            [
-                "259a67894f5fcb24"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1041,7 +1023,8 @@
         "y": 320,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1060,7 +1043,8 @@
         "y": 600,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1079,7 +1063,8 @@
         "y": 700,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1098,7 +1083,8 @@
         "y": 760,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1373,7 +1359,8 @@
         "y": 260,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1417,7 +1404,8 @@
         "y": 460,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1461,7 +1449,8 @@
         "y": 820,
         "wires": [
             [
-                "0d092ec0d2b160c1"
+                "0d092ec0d2b160c1",
+                "b3158ccc575e8c7b"
             ]
         ]
     },
@@ -1581,8 +1570,8 @@
         "text": "payload.content",
         "inputtypemessage": "msg",
         "rejectssl": false,
-        "x": 1360,
-        "y": 40,
+        "x": 1580,
+        "y": 660,
         "wires": [
             [
                 "68989d6bf3259e19"
@@ -1594,15 +1583,15 @@
         "type": "debug",
         "z": "8df74e9bb1d5780b",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1680,
-        "y": 60,
+        "x": 2160,
+        "y": 40,
         "wires": []
     }
 ]

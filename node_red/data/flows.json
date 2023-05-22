@@ -833,18 +833,18 @@
         "rules": [
             {
                 "t": "gte",
-                "v": "100",
+                "v": "200",
                 "vt": "num"
             }
         ],
-        "checkall": "true",
-        "repair": false,
+        "checkall": "false",
+        "repair": true,
         "outputs": 1,
         "x": 620,
         "y": 140,
         "wires": [
             [
-                "14f4c0cf28f19a3e"
+                "259a67894f5fcb24"
             ]
         ]
     },
@@ -1005,26 +1005,6 @@
             [
                 "0d092ec0d2b160c1",
                 "b3158ccc575e8c7b"
-            ]
-        ]
-    },
-    {
-        "id": "14f4c0cf28f19a3e",
-        "type": "rbe",
-        "z": "8df74e9bb1d5780b",
-        "name": "",
-        "func": "narrowbandEq",
-        "gap": "1",
-        "start": "",
-        "inout": "in",
-        "septopics": true,
-        "property": "payload",
-        "topi": "topic",
-        "x": 810,
-        "y": 140,
-        "wires": [
-            [
-                "259a67894f5fcb24"
             ]
         ]
     },
@@ -1603,7 +1583,7 @@
         "type": "debug",
         "z": "8df74e9bb1d5780b",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
