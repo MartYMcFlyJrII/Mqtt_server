@@ -25,7 +25,7 @@ def publish(client):
     msg_count = 0
     nvl_agua_cruda  = None
     nvl_agua_purificada = None
-    pm  = pm
+    pm  = None
     cloro = None
     while True:
         time.sleep(5)
