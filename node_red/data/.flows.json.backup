@@ -49,9 +49,9 @@
         "tab": "d6ae4db263df279d",
         "order": 2,
         "disp": true,
-        "width": 15,
+        "width": "15",
         "collapse": false,
-        "className": ""
+        "className": "div_hora"
     },
     {
         "id": "d6ae4db263df279d",
@@ -83,18 +83,18 @@
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
-                "baseColor": "#2eceff",
+                "baseColor": "#3cd0d3",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "reset": false
             },
             "themeState": {
                 "base-color": {
                     "default": "#001eff",
-                    "value": "#2eceff",
+                    "value": "#3cd0d3",
                     "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#2eceff",
+                    "value": "#3cd0d3",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -122,7 +122,7 @@
                     "edited": true
                 },
                 "widget-backgroundColor": {
-                    "value": "#2eceff",
+                    "value": "#3cd0d3",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -210,13 +210,13 @@
     {
         "id": "399bb99a53e8bf15",
         "type": "ui_group",
-        "name": "Sucursal 1",
+        "name": "Sucursal",
         "tab": "d6ae4db263df279d",
         "order": 1,
         "disp": true,
-        "width": 15,
+        "width": "15",
         "collapse": false,
-        "className": ""
+        "className": "div_sucursal"
     },
     {
         "id": "22eb5f0119414d6b",
@@ -852,6 +852,7 @@
         "id": "0d092ec0d2b160c1",
         "type": "telegram sender",
         "z": "8df74e9bb1d5780b",
+        "d": true,
         "name": "mandar_mensajes",
         "bot": "4447d87b9554097f",
         "haserroroutput": false,
@@ -888,7 +889,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1050,
+        "x": 1010,
         "y": 140,
         "wires": [
             [
@@ -1099,10 +1100,10 @@
         "height": 9,
         "label": "Historial Agua Cruda",
         "chartType": "line",
-        "legend": "true",
+        "legend": "false",
         "xformat": "HH:mm:ss",
         "interpolate": "monotone",
-        "nodata": "",
+        "nodata": "Sin datos disponibles",
         "dot": true,
         "ymin": "0",
         "ymax": "2500",
@@ -1225,7 +1226,7 @@
         "order": 1,
         "width": 15,
         "height": 1,
-        "format": "<style>\n    /*Degradado en el fondo*/\n    body {\n        background: -webkit-linear-gradient(55deg,\n                #009785 0%,\n                #3855AB 50%,\n                #AF24E3 100%);\n        -webkit-touch-callout: none !important;\n    }\n\n    /*Nav-Bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: transparent !important;\n        color: #FFFFFF;\n    }\n\n    .md-toolbar-tools h1,\n    .md-toolbar-tools h2,\n    .md-toolbar-tools h3 {\n        font-size: inherit;\n        font-weight: bold;\n        margin: inherit;\n        color: #FFFFFF !important;\n    }\n\n    body.nr-dashboard-theme md-toolbar .md-toolbar-tools {\n    color: #fff;\n    filter: invert(0%); \n    }\n\n    /*Grupos*/\n    ui-card-panel {\n        background-color: rgba(255, 255, 255, 0.1) !important;\n        border-radius: 10px !important;\n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        border: none;\n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-theme {\n        color: rgba(255, 255, 255, 0.5);\n    }\n\n\n    /*Color de letras de graficas*/\n\n    .nr-dashboard-theme .nr-dashboard-gauge text:not(.g-nc text, .g-ppm text) {\n        fill: rgb(255, 255, 255) !important;\n        margin: 8px;\n        font-size:32px;\n        font-weight: bold;\n        /*text-anchor: middle;\n        dominant-baseline: middle;*/\n        transform: translate(50%, 50%);\n      \n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n        color: #a3eaff;\n        font-weight: bolder;\n        font-size: 141%;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-title {\n        margin: 6px 0px 24px 0px;\n        z-index: 1;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-titlel {\n        font-size: larger;\n        font-weight: bold;\n        z-index: 1;\n        opacity: 51%;\n    }\n\n    canvas.chart.chart-line {\n        height: calc(100% + -15px) !important;\n        width: calc(100%) !important;\n        color: white !important;\n    }\n\n    .g-nc text tspan, .g-ppm text tspan{\n    font-size: 150%;\n    line-height: 3;\n    }\n\n    .hora{\n    font-weight: bold;\n    font-size: 150%;\n    line-height: 3;\n    }\n    .sucursal{\n    font-weight: bold;\n    font-size: 150%;\n    line-height: 3;\n    }\n   \n</style>",
+        "format": "<style>\n\n    /*Degradado en el fondo*/\n    body {\n        background: -webkit-linear-gradient(55deg,\n                #009785 0%,\n                #3855AB 50%,\n                #AF24E3 100%);\n        -webkit-touch-callout: none !important;\n    }\n\n    /*Nav-Bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: transparent !important;\n        color: #FFFFFF;\n    }\n\n    .md-toolbar-tools h1,\n    .md-toolbar-tools h2,\n    .md-toolbar-tools h3 {\n        font-size: inherit;\n        font-weight: bold;\n        margin: inherit;\n        color: #FFFFFF !important;\n    }\n\n    body.nr-dashboard-theme md-toolbar .md-toolbar-tools {\n    color: #fff;\n    filter: invert(0%); \n    }\n\n    /*Grupos*/\n    ui-card-panel {\n        background-color: rgba(255, 255, 255, 0.1) !important;\n        border-radius: 10px !important;\n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        border: none;\n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-theme {\n        color: rgba(255, 255, 255, 0.5);\n    }\n\n\n    /*Color de letras de graficas*/\n\n    .nr-dashboard-theme .nr-dashboard-gauge text:not(.g-nc text, .g-ppm text) {\n        fill: rgb(255, 255, 255) !important;\n        margin: 8px;\n        font-size:32px;\n        font-weight: bold;\n        text-anchor: middle;\n        dominant-baseline: middle;\n        transform: translate(50%, 50%);\n      \n    }\n\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n        color: #a3eaff;\n        font-weight: bolder;\n        font-size: 141%;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-title {\n        margin: 6px 0px 24px 0px;\n        z-index: 1;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-gauge-titlel {\n        font-size: larger;\n        font-weight: bold;\n        z-index: 1;\n        /*opacity: 51%;*/\n    }\n\n    canvas.chart.chart-line {\n        height: calc(100% + -15px) !important;\n        width: calc(100%) !important;\n        color: white !important;\n    }\n\n    .g-nc text tspan, .g-ppm text tspan{\n    font-size: 150%;\n    line-height: 3;\n    }\n\n    .hora{\n    color: #a3eaff;\n    font-weight: bold;\n    font-size: 130%;\n    line-height: 3;\n    }\n    .sucursal{\n    color: #a3eaff;\n    font-weight: bold;\n    font-size: 110%;\n    line-height: 3;\n    }\n   .g-ppm p{\n   color: white;\n   }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -1511,10 +1512,10 @@
         "height": 9,
         "label": "Historial Agua Purirficada",
         "chartType": "line",
-        "legend": "true",
+        "legend": "false",
         "xformat": "HH:mm:ss",
         "interpolate": "monotone",
-        "nodata": "",
+        "nodata": "Sin datos disponibles",
         "dot": true,
         "ymin": "0",
         "ymax": "2500",
@@ -1555,7 +1556,7 @@
         "name": "Direccion",
         "label": "",
         "format": "C. Olivares 350, Las Granjas, 83250 Hermosillo, Son.",
-        "layout": "row-spread",
+        "layout": "row-center",
         "className": "sucursal",
         "x": 380,
         "y": 1160,
@@ -1565,6 +1566,7 @@
         "id": "b3158ccc575e8c7b",
         "type": "node-red-contrib-whatsapp-cmb-send-message",
         "z": "8df74e9bb1d5780b",
+        "d": true,
         "name": "",
         "account": "fbe34357dd768069",
         "text": "payload.content",
