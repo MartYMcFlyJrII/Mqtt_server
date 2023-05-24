@@ -94,8 +94,8 @@
                     "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#3cd0d3",
-                    "edited": false
+                    "value": "#2eceff",
+                    "edited": true
                 },
                 "page-backgroundColor": {
                     "value": "#fafafa",
@@ -1108,7 +1108,7 @@
         "ymin": "0",
         "ymax": "2500",
         "removeOlder": 1,
-        "removeOlderPoints": "",
+        "removeOlderPoints": "500",
         "removeOlderUnit": "3600",
         "cutout": 0,
         "useOneColor": false,
