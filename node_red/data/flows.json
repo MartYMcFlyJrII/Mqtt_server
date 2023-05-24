@@ -660,7 +660,8 @@
         "y": 380,
         "wires": [
             [
-                "420a5fbfe251e4ec"
+                "420a5fbfe251e4ec",
+                "25d930e78b1a2133"
             ]
         ]
     },
@@ -766,7 +767,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
+        "x": 430,
         "y": 240,
         "wires": [
             [
@@ -1555,7 +1556,7 @@
         "text": "payload.content",
         "inputtypemessage": "msg",
         "rejectssl": false,
-        "x": 1580,
+        "x": 1560,
         "y": 660,
         "wires": [
             [
@@ -1578,6 +1579,22 @@
         "statusType": "auto",
         "x": 2160,
         "y": 40,
+        "wires": []
+    },
+    {
+        "id": "25d930e78b1a2133",
+        "type": "debug",
+        "z": "8df74e9bb1d5780b",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 240,
+        "y": 240,
         "wires": []
     }
 ]
