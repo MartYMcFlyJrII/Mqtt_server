@@ -56,7 +56,7 @@
     {
         "id": "d6ae4db263df279d",
         "type": "ui_tab",
-        "name": "Datos de agua purificada JIDAL",
+        "name": "Datos de agua purificada AquaCrystal",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -660,7 +660,8 @@
         "y": 380,
         "wires": [
             [
-                "420a5fbfe251e4ec"
+                "420a5fbfe251e4ec",
+                "25d930e78b1a2133"
             ]
         ]
     },
@@ -766,7 +767,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
+        "x": 430,
         "y": 240,
         "wires": [
             [
@@ -852,7 +853,6 @@
         "id": "0d092ec0d2b160c1",
         "type": "telegram sender",
         "z": "8df74e9bb1d5780b",
-        "d": true,
         "name": "mandar_mensajes",
         "bot": "4447d87b9554097f",
         "haserroroutput": false,
@@ -883,7 +883,7 @@
         "type": "function",
         "z": "8df74e9bb1d5780b",
         "name": "mensaje_pm",
-        "func": "msg.payload = {\n    \"chatId\": \"6179957821\",\n    \"type\": \"message\",\n    \"content\": \"ESTE MENSAJE SOLO SE DEBE DE ENVIOAR UNA VEZ Pm llegó a su límite \" + msg.payload\n}\nreturn msg;\n",
+        "func": "msg.payload = {\n    \"chatId\": \"6179957821\",\n    \"type\": \"message\",\n    \"content\": \"Pm llegó a su límite \" + msg.payload\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1566,13 +1566,12 @@
         "id": "b3158ccc575e8c7b",
         "type": "node-red-contrib-whatsapp-cmb-send-message",
         "z": "8df74e9bb1d5780b",
-        "d": true,
         "name": "",
         "account": "fbe34357dd768069",
         "text": "payload.content",
         "inputtypemessage": "msg",
         "rejectssl": false,
-        "x": 1580,
+        "x": 1560,
         "y": 660,
         "wires": [
             [
@@ -1594,6 +1593,22 @@
         "statusType": "auto",
         "x": 2160,
         "y": 40,
+        "wires": []
+    },
+    {
+        "id": "25d930e78b1a2133",
+        "type": "debug",
+        "z": "8df74e9bb1d5780b",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 240,
+        "y": 240,
         "wires": []
     }
 ]
