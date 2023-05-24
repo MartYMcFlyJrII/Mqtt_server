@@ -852,7 +852,6 @@
         "id": "0d092ec0d2b160c1",
         "type": "telegram sender",
         "z": "8df74e9bb1d5780b",
-        "d": true,
         "name": "mandar_mensajes",
         "bot": "4447d87b9554097f",
         "haserroroutput": false,
@@ -864,26 +863,11 @@
         ]
     },
     {
-        "id": "b7a782bb561c9b37",
-        "type": "telegram receiver",
-        "z": "8df74e9bb1d5780b",
-        "name": "recibir_mensajes",
-        "bot": "4447d87b9554097f",
-        "saveDataDir": "",
-        "filterCommands": false,
-        "x": 1460,
-        "y": 120,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
         "id": "259a67894f5fcb24",
         "type": "function",
         "z": "8df74e9bb1d5780b",
         "name": "mensaje_pm",
-        "func": "msg.payload = {\n    \"chatId\": \"6179957821\",\n    \"type\": \"message\",\n    \"content\": \"ESTE MENSAJE SOLO SE DEBE DE ENVIOAR UNA VEZ Pm llegó a su límite \" + msg.payload\n}\nreturn msg;\n",
+        "func": "msg.payload = {\n    \"chatId\": \"6179957821\",\n    \"type\": \"message\",\n    \"content\": \"Pm llegó a su límite \" + msg.payload\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -907,8 +891,8 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "lte",
-                "v": "2",
+                "t": "gte",
+                "v": "15",
                 "vt": "num"
             }
         ],
@@ -1566,7 +1550,6 @@
         "id": "b3158ccc575e8c7b",
         "type": "node-red-contrib-whatsapp-cmb-send-message",
         "z": "8df74e9bb1d5780b",
-        "d": true,
         "name": "",
         "account": "fbe34357dd768069",
         "text": "payload.content",
@@ -1585,11 +1568,12 @@
         "type": "debug",
         "z": "8df74e9bb1d5780b",
         "name": "debug 1",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 2160,

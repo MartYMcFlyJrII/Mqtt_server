@@ -56,7 +56,7 @@
     {
         "id": "d6ae4db263df279d",
         "type": "ui_tab",
-        "name": "Datos de agua purificada JIDAL",
+        "name": "Datos de agua purificada AquaCrystal",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -852,7 +852,6 @@
         "id": "0d092ec0d2b160c1",
         "type": "telegram sender",
         "z": "8df74e9bb1d5780b",
-        "d": true,
         "name": "mandar_mensajes",
         "bot": "4447d87b9554097f",
         "haserroroutput": false,
@@ -875,7 +874,9 @@
         "y": 120,
         "wires": [
             [],
-            []
+            [
+                "68989d6bf3259e19"
+            ]
         ]
     },
     {
@@ -1566,7 +1567,6 @@
         "id": "b3158ccc575e8c7b",
         "type": "node-red-contrib-whatsapp-cmb-send-message",
         "z": "8df74e9bb1d5780b",
-        "d": true,
         "name": "",
         "account": "fbe34357dd768069",
         "text": "payload.content",
@@ -1585,7 +1585,7 @@
         "type": "debug",
         "z": "8df74e9bb1d5780b",
         "name": "debug 1",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
